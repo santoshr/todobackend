@@ -1,5 +1,5 @@
-FROM jmenga/todobackend-base:latest
-MAINTAINER Justin Menga <justin.menga@gmail.com>
+FROM santoshr/todobackend-base:latest
+MAINTAINER Santosh Rai <santosh.rai.acquis@gmail.com>
 
 # Install dev/build dependencies
 RUN apt-get update && \
