@@ -31,7 +31,7 @@ services:
     links:
       - nginx
     environment:
-      URL: http://nginx:8000/todos
+      URL: http://nginx:8070/todos
       JUNIT_REPORT_PATH: /reports/acceptance.xml
       JUNIT_REPORT_STACK: 1
     command: --reporter mocha-jenkins-reporter
@@ -43,7 +43,7 @@ services:
     links:
       - app
     ports:
-      - "8000:8000"
+      - "8070:8070"
     volumes:
       - webroot:/var/www/todobackend
 
